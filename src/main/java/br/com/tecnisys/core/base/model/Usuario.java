@@ -15,18 +15,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-
-import br.com.tecnisys.core.base.model.Perfil;
-
 
 /**
  * The persistent class for the usuario database table.
  * 
  */
 @Entity
-@Table(name="usuario", schema="core_base")
-@NamedQuery(name="Usuario.findAll", query="SELECT u FROM Usuario u")
 public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
