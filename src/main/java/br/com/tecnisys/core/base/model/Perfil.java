@@ -22,6 +22,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * 
  */
 @Entity
+@Table(name = "perfil")
+@NamedQuery(name="Perfil.findAll", query="SELECT p FROM Perfil p")
 public class Perfil implements Serializable {
 	private static final long serialVersionUID = 1L;
 

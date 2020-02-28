@@ -10,6 +10,8 @@ import java.sql.Timestamp;
  * 
  */
 @Entity
+@Table(name="historico_acesso")
+@NamedQuery(name="HistoricoAcesso.findAll", query="SELECT h FROM HistoricoAcesso h")
 public class HistoricoAcesso implements Serializable {
 	private static final long serialVersionUID = 1L;
 

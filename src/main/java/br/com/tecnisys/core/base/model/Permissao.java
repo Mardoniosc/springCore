@@ -11,6 +11,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * 
  */
 @Entity
+@Table(name = "permissao")
+@NamedQuery(name="Permissao.findAll", query="SELECT p FROM Permissao p")
 public class Permissao implements Serializable {
 	private static final long serialVersionUID = 1L;
 
